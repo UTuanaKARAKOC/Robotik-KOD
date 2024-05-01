@@ -1,0 +1,20 @@
+int buton=8;
+int led=13;
+int durum=0;
+
+void setup() {
+  pinMode(led,OUTPUT);
+  pinMode(buton,INPUT);
+}
+
+void loop() {
+  durum=digitalRead(buton);
+  if(durum==1)
+  {
+    digitalWrite(led,HIGH);
+  }
+  else 
+  {
+    digitalWrite(led,LOW);
+  }
+}
